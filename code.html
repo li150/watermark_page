@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>下载APK</title>
+  </head>
+  <body>
+    <h1>Downloading APK File...</h1>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const url =
+          "https://gitee.com/lis150/camera_watermark_app/raw/master/apk/camera_watermark_app.apk";
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = ""; // The filename can be specified here if you want.
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      });
+    </script>
+  </body>
+</html>
